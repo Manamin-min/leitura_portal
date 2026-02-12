@@ -9,6 +9,27 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <% if notice %>
+      <div class="alert alert-success">
+       <%= notice %>
+     </div>
+    <% end %>
+
+    <% if alert %>
+      <div class="alert alert-danger">
+        <%= alert %>
+      </div>
+    <% end %>
+
+    <% if notice.present? %>
+      <div class="alert alert-success"><%= notice %></div>
+    <% end %>
+
+    <% if alert.present? %>
+      <div class="alert alert-danger"><%= alert %></div>
+    <% end %>
+    
+   
     <%= yield :head %>
 
     <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
@@ -35,8 +56,9 @@
 
     <div class="d-flex gap-2">
       <!-- Por enquanto é “fake”. Quando tiver login, vira condicional -->
-      <a class="btn btn-primary" href="#">Criar Conta</a>
+      <a class="btn btn-primary" href="<%= signup_path %>">Criar Conta</a>
       <a class="btn btn-outline-secondary" href="#">Login</a>
+
     </div>
   </div>
 </nav>
