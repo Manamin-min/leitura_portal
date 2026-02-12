@@ -1,24 +1,44 @@
-# README
+Atividade: site para cadastro e exibição de livros lidos pelos users
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Funcionalidades atuais:   
+  - Listagem livros;
+  - Cadastro;
+  - Armazenar no banco de dados;
+  - Ambiente Docker configurado.
+  
+Ferramentas utilizadas:
+  - Ruby;
+  - Rails;
+  - SQLite;
+  - Bootstrap;
+  - Docker & Docker Compose;
+  - GitHub.
 
-Things you may want to cover:
+Pastas:
+- app -> visual
+- config -> aplicação
+- db -> migração
+- test -> teste automatizados
+- docker-compose.yml -> configuração do Docker
 
-* Ruby version
+##Para rodar o projeto
+1- Clonar repositório
+   git clone https://github.com/Manamin-min/leitura_portal.git
+   cd leitura_portal
 
-* System dependencies
+2- Upar com Docker
+docker compose up --build
+o link vai estar disponível: http://localhost:3000
 
-* Configuration
 
-* Database creation
+Falta:
+- Implementação do login e sessão
+- Integração com API OpenLibrary
+- Relação usuário e livros
+- Controle no site, interação
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Uso da IA:
+- Correções do teste automatico e lint
+- Ajuda na parte de utilizar o Docker e como funciona os Rails
+- Sugestões de estrutura
+- Sugestões de sites para treinar em Ruby
